@@ -16,7 +16,7 @@
 # Frontend
 # 1. Admin Mode
 - ![Admin Post](SSan/frontend/nambah.png)
-- ![Admin Put](SSan/frontend/edit)
+- ![Admin Put](SSan/frontend/edit.png)
 - ![Admin Delete](SSan/frontend/hapus.png)
 
 # 2. User mode
