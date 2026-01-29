@@ -1,0 +1,221 @@
+/* Import Font Islami dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Amiri', serif; /* Font islami klasik */
+  background: linear-gradient(135deg, #FFFFFF 0%, #E8F5E8 50%, #C8E6C9 100%); /* Background putih-hijau seperti logo Muhammadiyah */
+  color: #2E7D32; /* Hijau gelap */
+  min-height: 100vh;
+  background-image: radial-gradient(circle, rgba(46, 125, 50, 0.1) 1px, transparent 1px); /* Pola islami ringan */
+  background-size: 20px 20px;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.95); /* Putih bersih */
+  border: 5px solid #4CAF50; /* Border hijau Muhammadiyah */
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(76, 175, 80, 0.3), inset 0 0 20px rgba(76, 175, 80, 0.1); /* Shadow hijau */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.App::before {
+  content: '☪'; /* Simbol bulan sabit untuk feel islami */
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2em;
+  color: #4CAF50;
+  opacity: 0.5;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #1B5E20; /* Hijau gelap */
+  font-size: 3em;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(76, 175, 80, 0.3);
+  font-weight: 700;
+}
+
+h2 {
+  color: #2E7D32;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+  text-shadow: 1px 1px 2px rgba(76, 175, 80, 0.2);
+}
+
+/* Role Section (seperti pilihan dakwah) */
+.role-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background: rgba(232, 245, 232, 0.8); /* Hijau muda */
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #4CAF50;
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.2);
+}
+
+.role-section label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #1B5E20;
+  font-size: 1.2em;
+}
+
+.role-section select, .role-section input {
+  padding: 12px;
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  background: #FFFFFF;
+  color: #2E7D32;
+  font-family: 'Amiri', serif;
+  font-size: 1em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.role-section select:focus, .role-section input:focus {
+  border-color: #1B5E20;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.5); /* Glow hijau */
+  outline: none;
+}
+
+/* Panels (seperti kitab atau buku pendidikan) */
+.panel {
+  background: rgba(255, 255, 255, 0.9);
+  border: 3px solid #4CAF50;
+  border-radius: 15px;
+  padding: 25px;
+  margin-top: 20px;
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.2), inset 0 0 15px rgba(76, 175, 80, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #2E7D32;
+}
+
+.panel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(76, 175, 80, 0.4);
+}
+
+/* Buttons (seperti tombol amal) */
+button {
+  background: linear-gradient(45deg, #4CAF50, #66BB6A); /* Hijau gradient */
+  color: #FFFFFF;
+  border: 2px solid #4CAF50;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Amiri', serif;
+  font-weight: 700;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  margin: 5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(45deg, #66BB6A, #4CAF50);
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.5);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Inputs and Selects (seperti form pendidikan) */
+input, select {
+  padding: 12px;
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  background: #FFFFFF;
+  color: #2E7D32;
+  font-family: 'Amiri', serif;
+  font-size: 1em;
+  width: 100%;
+  max-width: 300px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  margin: 5px 0;
+}
+
+input:focus, select:focus {
+  border-color: #1B5E20;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+  outline: none;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+/* Lists (seperti daftar kitab) */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: rgba(232, 245, 232, 0.8);
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #4CAF50;
+  box-shadow: 0 3px 8px rgba(76, 175, 80, 0.2);
+  transition: background 0.3s, transform 0.2s;
+}
+
+li:hover {
+  background: rgba(76, 175, 80, 0.1);
+  transform: translateX(5px);
+}
+
+/* Specific for Book Detail */
+.panel div {
+  margin-top: 10px;
+  padding: 10px;
+  background: rgba(200, 230, 201, 0.8);
+  border-radius: 8px;
+  color: #1B5E20;
+  border: 1px solid #4CAF50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 2.2em;
+  }
+  .role-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  form {
+    max-width: 100%;
+  }
+  input, select {
+    max-width: 100%;
+  }
+  .panel {
+    padding: 15px;
+  }
+}
